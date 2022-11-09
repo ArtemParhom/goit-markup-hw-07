@@ -9,7 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./sass/main.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,41 +18,43 @@
     />
   </head>
   <body>
-    <header class="menu">
+    <header class="header">
       <div class="container">
-        <nav class="menu-nav">
-          <a class="logo" href="./index.html" title="Home page"
+        <nav class="header__menu">
+          <a class="header__logo" href="./index.html" title="Home page"
             >Web<span>Studio</span></a
           >
-          <ul class="nav-links">
-            <li class="list-link">
-              <a class="nav-link" href="./index.html" title="Studio">Студія</a>
+          <ul class="header__nav">
+            <li class="header__list">
+              <a class="header__link" href="./index.html" title="Studio"
+                >Студія</a
+              >
             </li>
-            <li class="list-link">
+            <li class="header__list">
               <a
-                class="nav-link nav-actual"
+                class="header__link header__link--focus"
                 href="./portfolio.html"
                 title="Portfolio"
                 >Портфоліо</a
               >
             </li>
-            <li class="list-link">
-              <a class="nav-link" href="#" title="Contacts">Контакти</a>
+            <li class="header__list">
+              <a class="header__link" href="#" title="Contacts">Контакти</a>
             </li>
           </ul>
         </nav>
-        <ul class="nav-links">
-          <li class="li-contacts">
-            <a class="nav-contacts" href="mailto:info@devstudio.com">
-              <svg class="icon-contact" width="16" height="12">
+        <ul class="header__nav">
+          <li class="header__contacts">
+            <a class="link-contact" href="mailto:info@devstudio.com">
+              <svg class="link-contact__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope-hover"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="li-contacts">
-            <a class="nav-contacts" href="tel:+380961111111">
-              <svg class="icon-contact" width="10" height="16">
+          <li class="header__contacts">
+            <a class="link-contact" href="tel:+380961111111">
+              <svg class="link-contact__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-Vector"></use>
               </svg>
               +38 096 111 11 11</a
@@ -64,206 +66,308 @@
     <main class="portfolio">
       <section class="portfolio-cards section-pading">
         <div class="container">
-          <ul class="list-buttons">
-            <li><button class="portfolio-button" type="button">Усі</button></li>
+          <ul class="portfolio-buttons list-buttons">
             <li>
-              <button class="portfolio-button" type="button">Веб-сайти</button>
+              <button
+                class="portfolio-buttons__button portfolio-button"
+                type="button"
+              >
+                Усі
+              </button>
             </li>
             <li>
-              <button class="portfolio-button" type="button">Додатки</button>
+              <button
+                class="portfolio-buttons__button portfolio-button"
+                type="button"
+              >
+                Веб-сайти
+              </button>
             </li>
             <li>
-              <button class="portfolio-button" type="button">Дизайн</button>
+              <button
+                class="portfolio-buttons__button portfolio-button"
+                type="button"
+              >
+                Додатки
+              </button>
             </li>
             <li>
-              <button class="portfolio-button" type="button">Маркетинг</button>
+              <button
+                class="portfolio-buttons__button portfolio-button"
+                type="button"
+              >
+                Дизайн
+              </button>
+            </li>
+            <li>
+              <button
+                class="portfolio-buttons__button portfolio-button"
+                type="button"
+              >
+                Маркетинг
+              </button>
             </li>
           </ul>
-          <ul class="portfolio-cards-list">
-            <li class="portfolio-card">
-              <a class="portfolio-card-link" href="#">
-                <div class="cardimage-overlay">
+          <ul class="products-list portfolio-cards-list">
+            <li class="product-card portfolio-card">
+              <!-- portfolio-card це не модифікатор -->
+              <a class="product-card__link portfolio-card-link" href="#"
+                ><!--portfilio-card-link це не модифікатор  -->
+                <div class="product-card__cardimage-overlay cardimage-overlay">
+                  <!-- це не модифікатор -->
                   <img
                     src="./images/technocrak.jpg"
                     alt="technocrak"
                     width="370"
                   />
-                  <p class="overlay-text">
+                  <p class="product-card__overlay-text overlay-text">
+                    <!-- це не модифікатор -->
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <div class="cards-borderbottom">
-                  <h3 class="portfolio-card-title">Технокряк</h3>
-                  <p class="portfolio-card-text">Веб-сайт</p>
+                <div class="product-card__borderbottom cards-borderbottom">
+                  <!-- це не модифікатор -->
+                  <h3 class="product-card__title portfolio-card-title">
+                    <!-- це не модифікатор -->
+
+                    Технокряк
+                  </h3>
+                  <p class="product-card__text portfolio-card-text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-card">
-              <a class="portfolio-card-link" href=""
-                ><div class="cardimage-overlay">
+            <li class="product-card portfolio-card">
+              <!-- portfolio-card це не модифікатор -->
+              <a class="product-card__link portfolio-card-link" href="">
+                <!--portfilio-card-link це не модифікатор  -->
+                <div class="product-card__cardimage-overlay cardimage-overlay">
+                  <!-- це не модифікатор -->
                   <img
                     src="./images/poster-new-orlean-vs-golden-star.jpg"
                     alt="poster-new-orlean-vs-golden-star"
                     width="370"
                   />
-                  <p class="overlay-text">
+                  <p class="product-card__overlay-text overlay-text">
+                    <!-- це не модифікатор -->
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <div class="cards-borderbottom">
-                  <h3 class="portfolio-card-title">
+                <div class="product-card__borderbottom cards-borderbottom">
+                  <!-- це не модифікатор -->
+                  <h3 class="product-card__title portfolio-card-title">
+                    <!-- це не модифікатор -->
+
                     Постер New Orlean vs Golden Star
                   </h3>
-                  <p class="portfolio-card-text">Дизайн</p>
+                  <p class="product-card__text portfolio-card-text">Дизайн</p>
+                  <!-- це не модифікатор -->
                 </div>
               </a>
             </li>
-            <li class="portfolio-card">
-              <a class="portfolio-card-link" href=""
-                ><div class="cardimage-overlay">
+            <li class="product-card portfolio-card">
+              <!-- portfolio-card це не модифікатор -->
+              <a class="product-card__link portfolio-card-link" href="">
+                <!--portfilio-card-link це не модифікатор  -->
+                <div class="product-card__cardimage-overlay cardimage-overlay">
+                  <!-- це не модифікатор -->
                   <img
                     src="./images/seafood-restaurant.jpg"
                     alt="seafood-restaurant"
                     width="370"
                   />
-                  <p class="overlay-text">
+                  <p class="product-card__overlay-text overlay-text">
+                    <!-- це не модифікатор -->
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <div class="cards-borderbottom">
-                  <h3 class="portfolio-card-title">Ресторан Seafood</h3>
-                  <p class="portfolio-card-text">Додаток</p>
+                <div class="product-card__borderbottom cards-borderbottom">
+                  <!-- це не модифікатор -->
+                  <h3 class="product-card__title portfolio-card-title">
+                    <!-- це не модифікатор -->
+                    Ресторан Seafood
+                  </h3>
+                  <p class="product-card__text portfolio-card-text">Додаток</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-card">
-              <a class="portfolio-card-link" href=""
-                ><div class="cardimage-overlay">
+            <li class="product-card portfolio-card">
+              <!-- portfolio-card це не модифікатор -->
+              <a class="product-card__link portfolio-card-link" href="">
+                <!--portfilio-card-link це не модифікатор  -->
+                <div class="product-card__cardimage-overlay cardimage-overlay">
+                  <!-- це не модифікатор -->
                   <img
                     src="./images/project-prime.jpg"
                     alt="project-prime"
                     width="370"
                   />
-                  <p class="overlay-text">
+                  <p class="product-card__overlay-text overlay-text">
+                    <!-- це не модифікатор -->
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <div class="cards-borderbottom">
-                  <h3 class="portfolio-card-title">Проєкт Prime</h3>
-                  <p class="portfolio-card-text">Маркетинг</p>
+                <div class="product-card__borderbottom cards-borderbottom">
+                  <!-- це не модифікатор -->
+                  <h3 class="product-card__title portfolio-card-title">
+                    <!-- це не модифікатор -->
+                    Проєкт Prime
+                  </h3>
+                  <p class="product-card__text portfolio-card-text">
+                    Маркетинг
+                  </p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-card">
-              <a class="portfolio-card-link" href=""
-                ><div class="cardimage-overlay">
+            <li class="product-card portfolio-card">
+              <!-- portfolio-card це не модифікатор -->
+              <a class="product-card__link portfolio-card-link" href="">
+                <!--portfilio-card-link це не модифікатор  -->
+                <div class="product-card__cardimage-overlay cardimage-overlay">
+                  <!-- це не модифікатор -->
                   <img
                     src="./images/boxes-project.jpg"
                     alt="boxes-project"
                     width="370"
                   />
-                  <p class="overlay-text">
+                  <p class="product-card__overlay-text overlay-text">
+                    <!-- це не модифікатор -->
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <div class="cards-borderbottom">
-                  <h3 class="portfolio-card-title">Проєкт Boxes</h3>
-                  <p class="portfolio-card-text">Додаток</p>
+                <div class="product-card__borderbottom cards-borderbottom">
+                  <!-- це не модифікатор -->
+                  <h3 class="product-card__title portfolio-card-title">
+                    <!-- це не модифікатор -->
+                    Проєкт Boxes
+                  </h3>
+                  <p class="product-card__text portfolio-card-text">Додаток</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-card">
-              <a class="portfolio-card-link" href=""
-                ><div class="cardimage-overlay">
+            <li class="product-card portfolio-card">
+              <!-- portfolio-card це не модифікатор -->
+              <a class="product-card__link portfolio-card-link" href="">
+                <!--portfilio-card-link це не модифікатор  -->
+                <div class="product-card__cardimage-overlay cardimage-overlay">
+                  <!-- це не модифікатор -->
                   <img
                     src="./images/inspiration-has-no-borders.jpg"
                     alt="inspiration-has-no-borders"
                     width="370"
                   />
-                  <p class="overlay-text">
+                  <p class="product-card__overlay-text overlay-text">
+                    <!-- це не модифікатор -->
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <div class="cards-borderbottom">
-                  <h3 class="portfolio-card-title">
+                <div class="product-card__borderbottom cards-borderbottom">
+                  <!-- це не модифікатор -->
+                  <h3 class="product-card__title portfolio-card-title">
+                    <!-- це не модифікатор -->
+
                     Inspiration has no Borders
                   </h3>
-                  <p class="portfolio-card-text">Веб-сайт</p>
+                  <p class="product-card__text portfolio-card-text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-card">
-              <a class="portfolio-card-link" href=""
-                ><div class="cardimage-overlay">
+            <li class="product-card portfolio-card">
+              <!-- portfolio-card це не модифікатор -->
+              <a class="product-card__link portfolio-card-link" href="">
+                <!--portfilio-card-link це не модифікатор  -->
+                <div class="product-card__cardimage-overlay cardimage-overlay">
+                  <!-- це не модифікатор -->
                   <img
                     src="./images/edition-limited-edition.jpg"
                     alt="edition-limited-edition"
                     width="370"
                   />
-                  <p class="overlay-text">
+                  <p class="product-card__overlay-text overlay-text">
+                    <!-- це не модифікатор -->
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <div class="cards-borderbottom">
-                  <h3 class="portfolio-card-title">Видання Limited Edition</h3>
-                  <p class="portfolio-card-text">Дизайн</p>
+                <div class="product-card__borderbottom cards-borderbottom">
+                  <!-- це не модифікатор -->
+                  <h3 class="product-card__title portfolio-card-title">
+                    <!-- це не модифікатор -->
+                    Видання Limited Edition
+                  </h3>
+                  <p class="product-card__text portfolio-card-text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-card">
-              <a class="portfolio-card-link" href=""
-                ><div class="cardimage-overlay">
+            <li class="product-card portfolio-card">
+              <!-- portfolio-card це не модифікатор -->
+              <a class="product-card__link portfolio-card-link" href="">
+                <!--portfilio-card-link це не модифікатор  -->
+                <div class="product-card__cardimage-overlay cardimage-overlay">
+                  <!-- це не модифікатор -->
                   <img
                     src="./images/lab-project.jpg"
                     alt="lab-project"
                     width="370"
                   />
-                  <p class="overlay-text">
+                  <p class="product-card__overlay-text overlay-text">
+                    <!-- це не модифікатор -->
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <div class="cards-borderbottom">
-                  <h3 class="portfolio-card-title">Проєкт LAB</h3>
-                  <p class="portfolio-card-text">Маркетинг</p>
+                <div class="product-card__borderbottom cards-borderbottom">
+                  <!-- це не модифікатор -->
+                  <h3 class="product-card__title portfolio-card-title">
+                    <!-- це не модифікатор -->
+                    Проєкт LAB
+                  </h3>
+                  <p class="product-card__text portfolio-card-text">
+                    Маркетинг
+                  </p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-card">
-              <a class="portfolio-card-link" href=""
-                ><div class="cardimage-overlay">
+            <li class="product-card portfolio-card">
+              <!-- portfolio-card це не модифікатор -->
+              <a class="product-card__link portfolio-card-link" href="">
+                <!--portfilio-card-link це не модифікатор  -->
+                <div class="product-card__cardimage-overlay cardimage-overlay">
+                  <!-- це не модифікатор -->
                   <img
                     src="./images/growing-business.jpg"
                     alt="growing-business"
                     width="370"
                   />
-                  <p class="overlay-text">
+                  <p class="product-card__overlay-text overlay-text">
+                    <!-- це не модифікатор -->
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <div class="cards-borderbottom">
-                  <h3 class="portfolio-card-title">Growing Business</h3>
-                  <p class="portfolio-card-text">Додаток</p>
+                <div class="product-card__borderbottom cards-borderbottom">
+                  <!-- це не модифікатор -->
+                  <h3 class="product-card__title portfolio-card-title">
+                    <!-- це не модифікатор -->
+                    Growing Business
+                  </h3>
+                  <p class="product-card__text portfolio-card-text">Додаток</p>
                 </div>
               </a>
-              <!-- 1. Для посилання додайте клас - https://i.imgur.com/duouBLm.png, по класу додайте text-decoration: none; display: block; і при ховері на посилання мають з'явитися тіні -->
             </li>
           </ul>
         </div>
@@ -272,26 +376,28 @@
     <footer class="page-footer">
       <div class="container">
         <div>
-          <a class="logo-footer" href="./index.html" title="Home page"
+          <a class="page-footer__logo" href="./index.html" title="Home page"
             >Web<span>Studio</span></a
           >
           <address>
-            <ul class="footer-list">
+            <ul class="page-footer__list">
               <li>
                 <a
-                  class="footer-address"
+                  class="page-footer__address"
                   href="https://www.google.com/maps/@50.4271216,30.5393053,3a,75y,228.09h,97.19t/data=!3m7!1e1!3m5!1sasVsrGr3M_-aZiyaNuZzGQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3DasVsrGr3M_-aZiyaNuZzGQ%26cb_client%3Dmaps_sv.tactile.gps%26w%3D203%26h%3D100%26yaw%3D108.164536%26pitch%3D0%26thumbfov%3D100!7i13312!8i6656"
                   target="_blank"
                   >м. Київ, пр-т Лесі Українки, 26</a
                 >
               </li>
               <li>
-                <a class="footer-contacts" href="mailto:info@devstudio.com"
+                <a
+                  class="page-footer__contacts"
+                  href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
               <li>
-                <a class="footer-contacts" href="tel:+380961111111"
+                <a class="page-footer__contacts" href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >
               </li>
@@ -299,12 +405,13 @@
           </address>
         </div>
         <div class="footer-social">
-          <h3 class="social-title">приєднуйтесь</h3>
-          <ul class="footer-social-links">
+          <p class="footer-social__title">приєднуйтесь</p>
+
+          <ul class="messengers">
             <li>
-              <a class="link-social footer-link-social" href="#">
+              <a class="messengers__link link-social" href="#">
                 <svg
-                  class="icon-social footer-icon-social"
+                  class="messengers__icon icon-social"
                   width="20"
                   height="20"
                 >
@@ -313,9 +420,9 @@
               </a>
             </li>
             <li>
-              <a class="link-social footer-link-social" href="#"
+              <a class="messengers__link link-social" href="#"
                 ><svg
-                  class="icon-social footer-icon-social"
+                  class="messengers__icon icon-social"
                   width="20"
                   height="20"
                 >
@@ -324,9 +431,9 @@
               </a>
             </li>
             <li>
-              <a class="link-social footer-link-social" href=""
+              <a class="messengers__link link-social" href=""
                 ><svg
-                  class="icon-social footer-icon-social"
+                  class="messengers__icon icon-social"
                   width="20"
                   height="20"
                 >
@@ -335,9 +442,9 @@
               </a>
             </li>
             <li>
-              <a class="link-social footer-link-social" href="">
+              <a class="messengers__link link-social" href="">
                 <svg
-                  class="icon-social footer-icon-social"
+                  class="messengers__icon icon-social"
                   width="20"
                   height="20"
                 >
@@ -347,6 +454,33 @@
             </li>
           </ul>
         </div>
+        <form
+          class="subscriptionn"
+          name="footer-form"
+          autocomplete="on"
+          novalidate
+        >
+          <label
+            for="subscriptionn__label subscription"
+            class="subscriptionn__title"
+            >Підпишіться на розсилку</label
+          >
+          <div class="subscriptionn__flex">
+            <input
+              type="email"
+              name="email"
+              id="subscription"
+              class="subscriptionn__input"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="subscriptionn__button">
+              <span class="subscriptionn__btntext">Підписатися</span>
+              <svg class="subscriptionn__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-iconpaiperplane"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
   </body>

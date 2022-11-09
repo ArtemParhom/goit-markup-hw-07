@@ -10,6 +10,13 @@ img {
 * {
     box-sizing:border-box;
 }
+:active,
+:hover,
+:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+/* ------------------------------ */
 :root {
     --logo-color-blue: #2196F3;
     --color-white: #ffffff;
@@ -19,12 +26,8 @@ img {
     --brand-color: #212121;
     --color-brand-icons: #AFB1B8;
 }
-:active,
-:hover,
-:focus {
-    outline: 0;
-    outline-offset: 0;
-}
+
+/* ------------------------- */
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--brand-color);
@@ -360,8 +363,7 @@ body {
 }
 .logo-client {
     fill: var(--color-brand-icons);
-    transition-property: fill;transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-client:hover > .logo-client,
  .link-client:focus > .logo-client{
@@ -433,7 +435,7 @@ body {
 }
 .footer-social {
     margin: 12px 0 0 70px;
-    /* 2. Для .footer-social залиште лише верхній і лівий марджини */
+   
 }
 .social-title {
     font-size: 14px;
@@ -482,7 +484,7 @@ body {
     padding-right: 12px;
     color: #FFFFFF;
     margin-right: 12px;
-    /* 3. Для .subscription-input не потрібен нижній марджин */
+    
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -496,14 +498,7 @@ body {
     letter-spacing: 1.25;
     color: rgba(255, 255, 255, 0.6);
 }
-/* стилі внизу для картинки фону літачка в форматі png (для використання потрібно видалити svg в html та стилі для svg)
 
-.button-footer::after {
-    content: '';
-    width: 24px;
-    height: 24px;
-    background-image: url(../images/icon-for-footer-button.png);
-} */
 .button-footer {
     width: 200px;
     height: 50px;
@@ -514,7 +509,7 @@ body {
 .button-text {
     margin-right: 10px;
 }
-/* стилі внизу для картинки фону літачка в форматі svg */
+
 .icon-iconpaiperplane {
     fill: #FFFFFF;
 }
@@ -639,7 +634,7 @@ body {
     height: 581px;
     border-radius: 4px;
     padding: 40px;
-    /* 4. Для .modal задайте паддинги з усіх сторін по 40рх */
+    
     background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     transform: translate(-50%, -50%);
@@ -664,14 +659,11 @@ body {
     fill: var(--logo-color-blue);
 }
 /* ----form modal window----- */
-.modal-form {
-    /* 5. Для .modal-form приберіть паддинги */
-}
+
 
 .title-modal-form {
     font-weight: 700;
-    /* 6. .title-modal-form має бути р,
-        а не заголовок (додав вагу шрифту */
+    
     font-size: 20px;
     line-height: 23px;
     text-align: center;
@@ -683,7 +675,6 @@ body {
 
 .label-styles {
     display: block;
-    /* 8. Для .label-styles задайте display: block; */
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.01em;
@@ -693,16 +684,14 @@ body {
 
 .box-inputs {
     position: relative;
-    /* 7. Для .box-inputs приберіть висоту,
-        задайте її для .box-inputs input */
+   
     margin-bottom: 10px;
 } 
 
 .box-inputs input {
     width: 100%;
     height: 40px;
-       /* 7. Для .box-inputs приберіть висоту,
-        задайте її для .box-inputs input */
+       
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding-left: 42px;
