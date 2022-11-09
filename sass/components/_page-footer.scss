@@ -91,7 +91,8 @@
             }
 }
     &__icon {
-        fill: $color-brand-icons;
+        fill: $color-white;
+        /* 2. Для іконок в футері колір має бути білим*/
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
         .link-social:hover > &,
                 .link-social:focus > & {
